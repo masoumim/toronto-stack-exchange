@@ -1,0 +1,668 @@
+/* Color Palette: https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
+
+/* NAV BAR */
+nav{
+    background-color: #DBE2EF;
+    color: #112D4E;
+    height: 4rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Press Start 2P';
+    display: flex;
+    flex-wrap: wrap;        
+}
+
+nav a:link, a:visited {    
+    color: #112D4E;    
+    text-decoration: none;
+    margin: 0 5rem;     
+  }
+
+nav a:hover{
+    color: #f64060;
+}
+
+@media only screen and (max-width: 980px) {
+    nav a:link, a:visited {    
+        color: #112D4E;
+        font-size: 1rem;    
+        text-decoration: none;
+        margin: 0 3rem;     
+      }   
+}
+
+@media only screen and (max-width: 720px) {
+    nav a:link, a:visited {    
+        color: #112D4E;
+        font-size: 1rem;    
+        text-decoration: none;
+        margin: 0 2rem;     
+      }   
+}
+
+@media only screen and (max-width: 595px) {
+    nav a:link, a:visited {    
+        color: #112D4E;
+        font-size: 1rem;    
+        text-decoration: none;
+        margin: 0 1rem;     
+      }   
+}
+
+@media only screen and (max-width: 470px) {
+    nav a:link, a:visited {    
+        color: #112D4E;
+        font-size: 0.7rem;    
+        text-decoration: none;
+        margin: 0 0.5rem;     
+      }   
+}
+
+/* HERO SECTION */
+.hero{
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./img/hero.png");
+    background-repeat: repeat;
+    background-size: 50px 50px;
+    color: #F9F7F7;
+    height: 35.5rem;
+    font-family: 'Press Start 2P';    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 45rem));
+}
+
+.hero .title-text{
+    background-color: #112d4ed0;
+    padding: 1rem;
+    margin: 1rem;
+    width: 33.5rem;
+    height: 20rem;
+    font-size: 2rem;
+}
+
+.hero p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.hero img{
+    width: 100x;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.hero a{
+    background-color: #f64060;
+    border: none;
+    color: white;
+    height: 5rem;
+    padding: 32px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Press Start 2P';
+    font-size: 16px;
+    box-shadow: 5px 10px #8a2336;
+    margin: 1rem;
+}
+
+.hero a:hover{
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 1439px) {
+    .hero{
+        height: 32rem;
+    } 
+}
+
+@media only screen and (max-width: 560px) {
+    .hero{
+        height: 25rem;
+    } 
+    
+    .hero .title-text{
+        width: 26rem;
+        height: 15rem;
+        font-size: 1.5rem;
+     }
+}
+
+@media only screen and (max-width: 430px) {
+    .hero .title-text{
+       width: 20rem;
+       height: 15rem;
+       font-size: 1rem;
+    }
+
+    .hero .title-text p{
+        padding-top: 1.5rem;
+    }
+}
+
+/* ABOUT SECTION */
+.about{
+    font-family:'Chakra Petch', sans-serif;
+    font-size: 1.5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 35rem));
+}
+
+.about .img-container{
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 1rem;
+}
+
+.about .text-container{
+    padding: 2rem;
+    text-align: center;
+    background-color: #DBE2EF;
+    color: #112D4E;
+    box-shadow: 10px 10px #969faf;
+}
+
+.about b{
+    color: #f64060;
+}
+
+@media only screen and (max-width: 605px) {
+    .about .text-container{
+        padding: 2rem;
+        text-align: center;
+        background-color: #DBE2EF;
+        color: #112D4E;
+        width: 20rem;
+        height: 50rem;
+        box-shadow: 10px 10px #969faf;
+    }
+}
+
+/* REASONS TO JOIN (REASON CARDS) */
+.reasons-to-join{
+    font-family: 'Press Start 2P';
+    font-size: 1.5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5rem;
+    background-color: #3b6aa347;
+    display: grid;
+    height: 40rem;    
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.reasons-to-join .reason-card{
+    background-color: #112d4eba;
+    color: #DBE2EF;
+    height: 30rem;
+    width: 25rem;
+    box-shadow: 10px 10px #f64060;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+.reasons-to-join .reason-card img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.reasons-to-join .reason-card h5{
+    font-family:'Chakra Petch', sans-serif;
+}
+
+@media only screen and (max-width: 1968px) {
+    .reasons-to-join{        
+        height: 75rem;
+        grid-template-columns: repeat(auto-fit, minmax(1rem, 42rem));
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .reasons-to-join{        
+        height: 140rem;   
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    .reasons-to-join{        
+        height: 150rem;
+    }
+
+    .reasons-to-join .reason-card{
+        height: 30rem;
+        width: 20rem;
+        box-shadow: 10px 10px #f64060;
+        border-radius: 1rem;
+        padding: 2rem;
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;    
+    }
+}
+
+/* FAQ */
+.faq-desktop{
+    font-family: 'Press Start 2P';
+    font-size: 1.5rem;
+    background-color: #F9F7F7;
+    color: #3F72AF;    
+    justify-content: center;    
+    align-items: center;    
+    display: grid;
+    height: 10rem;  
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 90rem));
+}
+
+.faq-desktop h1{
+    text-shadow: 5px 5px #DBE2EF;
+}
+
+.faq-tablet{
+    display: none;
+}
+
+.faq-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1462px) {
+    .faq-desktop{
+        display: none;
+    }
+
+    .faq-tablet{
+        font-family: 'Press Start 2P';
+        font-size: 1rem;
+        background-color: #F9F7F7;
+        color: #3F72AF;      
+        justify-content: center;
+        justify-items: center;    
+        align-items: center;    
+        display: grid;
+        height: 10rem;  
+        grid-template-columns: repeat(auto-fit, minmax(1rem, 90rem));
+    }
+
+    .faq-tablet h1{
+        text-shadow: 5px 5px #DBE2EF;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .faq-tablet{
+        display: none;
+    }
+
+    .faq-mobile{
+        font-family: 'Press Start 2P';
+        font-size: 1rem;
+        background-color: #F9F7F7;
+        color: #3F72AF;  
+        justify-content: center;
+        justify-items: center;    
+        align-items: center;    
+        display: grid;
+        height: 10rem;  
+        grid-template-columns: repeat(auto-fit, minmax(1rem, 90rem));
+    }
+
+    .faq-mobile h1{
+        text-shadow: 5px 5px #DBE2EF;
+    }
+}
+
+/* FAQ (Question + Answer cards) */
+.question-answer-container{
+    font-family: 'Press Start 2P';
+    font-size: 1.5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    padding-bottom: 45rem;
+    gap: 1rem;
+    background-color: #F9F7F7;
+    display: grid;
+    height: 40rem;
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+}
+
+.question{
+    background-color: #DBE2EF;
+    color: #112D4E;
+    width: 60rem;
+    height: 9rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 5px #848b98;
+}
+
+.question h1{
+    color: #f64060;
+}
+
+.answer{
+    background-color: #DBE2EF;
+    color: #112D4E;
+    width: 60rem;
+    height: 9rem;
+    padding: 2rem;
+    font-family:'Chakra Petch', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 5px #848b98;
+}
+
+@media only screen and (max-width: 1952px) {
+    .question-answer-container{        
+        height: 85rem;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .question-answer-container{        
+        height: 170rem;
+    }
+    
+    .question{
+        width: 20rem;
+        height: 20rem;
+        font-size: 1.2rem;
+    }
+    .answer{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+/* Location & Time */
+.location-time{
+    font-family: 'Press Start 2P';
+    font-size: 1.5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #3b6aa347;
+    display: grid;
+    height: 40rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 50rem));
+}
+
+.location-time .location{
+    background-color: #3b6aa3d1;
+    color: #F9F7F7;
+    box-shadow: 5px 5px #f64060;
+    width: 40rem;
+    height: 35rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.location-time .location img{
+    margin: 1rem;
+}
+
+.location-time .location h1{
+    text-align: center;
+    text-shadow: 5px 5px #112D4E;
+}
+
+.location-time .location h2, .location-time .location p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.location-time .time{
+    background-color: #3b6aa3d1;
+    color: #F9F7F7;
+    box-shadow: 5px 5px #f64060;
+    width: 40rem;
+    height: 35rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-time .time img{
+    width: 12rem;
+    height: 12rem;
+    margin: 2rem;
+}
+
+.location-time .time h1{
+    text-align: center;
+    text-shadow: 5px 5px #112D4E;
+}
+
+.location-time .time h2, .location-time .time p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1633px) {
+    .location-time{
+        height: 90rem;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .location-time{
+        height: 70rem;
+    }
+
+    .location-time .location, .location-time .time{
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .location-time .time p, .location-time .time h2{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .location-time{
+        height: 70rem;
+    }
+
+    .location-time .location, .location-time .time{
+        width: 21rem;
+        height: 30rem;
+    }
+
+    .location-time .time p, .location-time .time h2{
+        font-size: 2rem;
+    }
+}
+
+/* Sign up */
+.sign-up {
+    font-family: 'Press Start 2P';
+    font-size: 1rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;        
+    background-color: #F9F7F7;
+    background-image: url("./img/hero.png");
+    background-repeat: repeat;
+    background-size: 50px 50px;
+    display: grid;
+    height: 39.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 58rem));
+}
+
+.sign-up .meetup .meetup-button-small{
+    display: none;
+}
+
+.sign-up .meetup .step-1-small{
+    display: none;
+}
+
+.sign-up .tse .step-2-small{
+    display: none;
+}
+
+.sign-up .meetup, .sign-up .tse{
+    background-color: #DBE2EF;
+    color: #3F72AF;
+    text-shadow: 3px 3px #F9F7F7;
+    width: 60rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+
+.sign-up .meetup{
+    box-shadow: 0px 7px #9aafd6;
+}
+
+.sign-up .tse{
+    box-shadow: 7px 7px #9aafd6;
+}
+
+.sign-up i{
+    color: #f64060;
+    text-shadow: 3px 3px #5e1724;
+}
+
+.sign-up a{
+    background-color: #f64060;
+    border: none;
+    color: white;
+    text-shadow: none;
+    height: 3rem;
+    padding: 15px 32px;    
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Press Start 2P';
+    font-size: 16px;
+    box-shadow: 5px 10px #8a2336;
+    margin-top: 3rem;
+}
+
+.sign-up a:hover{
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 1937px) {
+    .sign-up{
+        grid-template-columns: repeat(auto-fit, minmax(1rem, 43rem));
+    }
+    
+    .sign-up .meetup, .sign-up .tse{
+        width: 45rem;
+        height: 15rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 1392px) {
+    .sign-up .meetup, .sign-up .tse{
+        width: 45rem;
+        height: 15rem;
+        font-size: 0.7rem;
+    }
+
+    .sign-up .meetup{
+        box-shadow: 7px 7px #9aafd6;
+    }
+}
+
+@media only screen and (max-width: 745px) {
+    .sign-up .meetup, .sign-up .tse{
+        width: 40rem;
+        height: 15rem;
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+    .sign-up .meetup, .sign-up .tse{
+        width: 22rem;
+        height: 17rem;        
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+
+    .sign-up .meetup .meetup-button-large{
+        display: none;
+    }
+
+    .sign-up .meetup .step-1-big{
+        display: none;
+    }
+
+    .sign-up .tse .step-2-big{
+        display: none;
+    }
+
+    .sign-up .meetup .step-1-small{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .sign-up .meetup .step-1-small i{
+        color: #f64060;
+        text-shadow: 3px 3px #5e1724;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .sign-up .tse .step-2-small{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .sign-up .tse .step-2-small i{
+        color: #f64060;
+        text-shadow: 3px 3px #5e1724;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .sign-up .meetup .meetup-button-small{
+        background-color: #f64060;
+        border: none;
+        color: white;
+        height: 5rem;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Press Start 2P';
+        font-size: 16px;
+        box-shadow: 5px 10px #8a2336;
+        margin-top: 2rem;
+    }
+}
