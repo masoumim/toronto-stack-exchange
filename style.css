@@ -10,7 +10,11 @@ nav{
     align-items: center;
     font-family: 'Press Start 2P';
     display: flex;
-    flex-wrap: wrap;        
+    flex-wrap: wrap;         
+}
+
+nav li{
+    display: inline;
 }
 
 nav a:link, a:visited {    
@@ -143,8 +147,8 @@ nav a:hover{
     }
 }
 
-/* ABOUT SECTION */
-.about{
+/* INFO SECTION */
+.info{
     font-family:'Chakra Petch', sans-serif;
     font-size: 1.5rem;
     justify-content: center;
@@ -155,13 +159,13 @@ nav a:hover{
     grid-template-columns: repeat(auto-fit, minmax(1rem, 35rem));
 }
 
-.about .img-container{
+.info .img-container{
     width: 20rem;
     height: 20rem;
     margin-bottom: 1rem;
 }
 
-.about .text-container{
+.info .text-container{
     padding: 2rem;
     text-align: center;
     background-color: #DBE2EF;
@@ -169,12 +173,12 @@ nav a:hover{
     box-shadow: 10px 10px #969faf;
 }
 
-.about b{
+.info b{
     color: #f64060;
 }
 
 @media only screen and (max-width: 605px) {
-    .about .text-container{
+    .info .text-container{
         padding: 2rem;
         text-align: center;
         background-color: #DBE2EF;
@@ -185,8 +189,8 @@ nav a:hover{
     }
 }
 
-/* REASONS TO JOIN (REASON CARDS) */
-.reasons-to-join{
+/* ABOUT (ABOUT CARDS) */
+.about{
     font-family: 'Press Start 2P';
     font-size: 1.5rem;
     justify-content: center;
@@ -199,7 +203,7 @@ nav a:hover{
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
-.reasons-to-join .reason-card{
+.about .about-card{
     background-color: #112d4eba;
     color: #DBE2EF;
     height: 30rem;
@@ -215,34 +219,34 @@ nav a:hover{
     text-align: center;    
 }
 
-.reasons-to-join .reason-card img{
+.about .about-card img{
     height: 10rem;
     width: 10rem;
 }
 
-.reasons-to-join .reason-card h5{
+.about .about-card h5{
     font-family:'Chakra Petch', sans-serif;
 }
 
 @media only screen and (max-width: 1968px) {
-    .reasons-to-join{        
+    .about{        
         height: 75rem;
         grid-template-columns: repeat(auto-fit, minmax(1rem, 42rem));
     }
 }
 
 @media only screen and (max-width: 1360px) {
-    .reasons-to-join{        
+    .about{        
         height: 140rem;   
     }
 }
 
 @media only screen and (max-width: 995px) {
-    .reasons-to-join{        
+    .about{        
         height: 150rem;
     }
 
-    .reasons-to-join .reason-card{
+    .about .about-card{
         height: 30rem;
         width: 20rem;
         box-shadow: 10px 10px #f64060;
@@ -258,85 +262,13 @@ nav a:hover{
 }
 
 /* FAQ */
-.faq-desktop{
-    font-family: 'Press Start 2P';
-    font-size: 1.5rem;
-    background-color: #F9F7F7;
-    color: #3F72AF;    
-    justify-content: center;    
-    align-items: center;    
-    display: grid;
-    height: 10rem;  
-    grid-template-columns: repeat(auto-fit, minmax(1rem, 90rem));
-}
-
-.faq-desktop h1{
-    text-shadow: 5px 5px #DBE2EF;
-}
-
-.faq-tablet{
-    display: none;
-}
-
-.faq-mobile{
-    display: none;
-}
-
-@media only screen and (max-width: 1462px) {
-    .faq-desktop{
-        display: none;
-    }
-
-    .faq-tablet{
-        font-family: 'Press Start 2P';
-        font-size: 1rem;
-        background-color: #F9F7F7;
-        color: #3F72AF;      
-        justify-content: center;
-        justify-items: center;    
-        align-items: center;    
-        display: grid;
-        height: 10rem;  
-        grid-template-columns: repeat(auto-fit, minmax(1rem, 90rem));
-    }
-
-    .faq-tablet h1{
-        text-shadow: 5px 5px #DBE2EF;
-    }
-}
-
-@media only screen and (max-width: 860px) {
-    .faq-tablet{
-        display: none;
-    }
-
-    .faq-mobile{
-        font-family: 'Press Start 2P';
-        font-size: 1rem;
-        background-color: #F9F7F7;
-        color: #3F72AF;  
-        justify-content: center;
-        justify-items: center;    
-        align-items: center;    
-        display: grid;
-        height: 10rem;  
-        grid-template-columns: repeat(auto-fit, minmax(1rem, 90rem));
-    }
-
-    .faq-mobile h1{
-        text-shadow: 5px 5px #DBE2EF;
-    }
-}
-
-/* FAQ (Question + Answer cards) */
 .question-answer-container{
     font-family: 'Press Start 2P';
     font-size: 1.5rem;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    margin-top: 0.5rem;
-    padding-bottom: 45rem;
+    margin: 4rem 0;    
     gap: 1rem;
     background-color: #F9F7F7;
     display: grid;
@@ -407,15 +339,15 @@ nav a:hover{
     display: grid;
     height: 40rem;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(1rem, 50rem));
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 35rem));
 }
 
 .location-time .location{
     background-color: #3b6aa3d1;
     color: #F9F7F7;
     box-shadow: 5px 5px #f64060;
-    width: 40rem;
-    height: 35rem;
+    width: 30rem;
+    height: 30rem;
     padding: 2rem;
     border-radius: 1rem;
     display: flex;
@@ -426,12 +358,12 @@ nav a:hover{
     margin: 1rem;
 }
 
-.location-time .location h1{
+.location-time .location h2{
     text-align: center;
     text-shadow: 5px 5px #112D4E;
 }
 
-.location-time .location h2, .location-time .location p {
+.location-time .location h3, .location-time .location p {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 2rem;
     text-align: center;
@@ -441,8 +373,8 @@ nav a:hover{
     background-color: #3b6aa3d1;
     color: #F9F7F7;
     box-shadow: 5px 5px #f64060;
-    width: 40rem;
-    height: 35rem;
+    width: 30rem;
+    height: 30rem;
     padding: 2rem;
     border-radius: 1rem;
     display: flex;
@@ -456,50 +388,36 @@ nav a:hover{
     margin: 2rem;
 }
 
-.location-time .time h1{
+.location-time .time h2{
     text-align: center;
     text-shadow: 5px 5px #112D4E;
 }
 
-.location-time .time h2, .location-time .time p {
+.location-time .time h3, .location-time .time p {
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
 }
 
-@media only screen and (max-width: 1633px) {
+@media only screen and (max-width: 1152px) {
     .location-time{
-        height: 90rem;
+        height: 80rem;
     }
 }
 
-@media only screen and (max-width: 675px) {
-    .location-time{
-        height: 70rem;
+@media only screen and (max-width: 515px) {
+    .location-time .location{
+        height: 32rem;
+        width: 20rem;
     }
 
-    .location-time .location, .location-time .time{
-        width: 30rem;
-        height: 30rem;
+    .location-time .time{
+        height: 32rem;
+        width: 20rem;
     }
 
-    .location-time .time p, .location-time .time h2{
-        font-size: 3rem;
-    }
-}
-
-@media only screen and (max-width: 490px) {
-    .location-time{
-        height: 70rem;
-    }
-
-    .location-time .location, .location-time .time{
-        width: 21rem;
-        height: 30rem;
-    }
-
-    .location-time .time p, .location-time .time h2{
-        font-size: 2rem;
+    .location-time .time p{
+        font-size: 1.9rem;
     }
 }
 
