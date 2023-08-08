@@ -105,22 +105,22 @@ nav a:hover{
     background-color: #f64060;
     font-size: 1rem;
     margin-bottom: 2rem;
-    transition: all .3s ease;
+    transition: transform 200ms, box-shadow 200ms ease;    
     box-shadow: 5px 10px 0px 0px #8a2336;
     border: 1px solid #8a2336;
     color: #F9F7F7;
 }
 
-.hero a:hover {
-    box-shadow: 5px 5px #8a2336;
+.hero a:hover, .hero a:focus {
+    box-shadow: 3px 5px #8a2336;
     background-color: #F9F7F7;
     color: #f64060;
+    transform: translateY(5px);
 }
 
 .hero a:active {
     box-shadow: 0px 0px #8a2336;
-    transform: translateY(5px);
-    transition: 200ms;
+    transform: translateY(10px);
 }
 
 @media only screen and (max-width: 1439px) {
@@ -489,24 +489,24 @@ nav a:hover{
     padding: 32px 32px;
     background-color: #f64060;
     margin-top: 2.5rem;
-    font-size: 1rem;
     margin-bottom: 2rem;
-    transition: all .3s ease;
+    font-size: 1rem;    
+    transition: transform 200ms, box-shadow 200ms ease;    
     box-shadow: 5px 10px 0px 0px #8a2336;
     border: 1px solid #8a2336;
     color: #F9F7F7;
 }
 
-.sign-up a:hover {
-    box-shadow: 5px 5px #8a2336;
+.sign-up a:hover, .sign-up a:focus {
+    box-shadow: 3px 5px #8a2336;
     background-color: #F9F7F7;
     color: #f64060;
+    transform: translateY(5px);
 }
 
 .sign-up a:active {
     box-shadow: 0px 0px #8a2336;
-    transform: translateY(5px);
-    transition: 200ms;
+    transform: translateY(10px);
 }
 
 @media only screen and (max-width: 1937px) {
@@ -538,8 +538,7 @@ nav a:hover{
 
 @media only screen and (max-width: 745px) {    
     .sign-up .meetup, .sign-up .tse{
-        width: 40rem;
-        /* height: 15rem; */
+        width: 40rem;        
         font-size: 0.9rem;
     }
 }
