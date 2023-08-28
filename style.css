@@ -343,8 +343,7 @@ nav a:hover{
     margin-top: 1rem;
     background-color: #3b6aa347;
     display: grid;
-    height: 40rem;
-    gap: 1rem;
+    height: 40rem;    
     grid-template-columns: repeat(auto-fit, minmax(1rem, 35rem));
 }
 
@@ -405,9 +404,9 @@ nav a:hover{
     text-align: center;
 }
 
-@media only screen and (max-width: 1152px) {
+@media only screen and (max-width: 1136px) {
     .location-time{
-        height: 80rem;
+        height: 80rem;               
     }
 }
 
@@ -430,7 +429,7 @@ nav a:hover{
 /* Sign up */
 .sign-up {
     font-family: 'Press Start 2P';
-    font-size: 1.2rem;
+    font-size: 1rem;
     justify-content: center;
     justify-items: center;
     align-items: center;        
@@ -440,10 +439,18 @@ nav a:hover{
     background-size: 50px 50px;
     display: grid;
     height: 35rem;
-    grid-template-columns: repeat(auto-fit, minmax(1rem, 58rem));
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 40rem));
 }
 
 .sign-up .meetup .meetup-button-small{
+    display: none;
+}
+
+.sign-up .tse .tsepage-button-small{
+    display: none;
+}
+
+.sign-up .discord .discord-button-small{
     display: none;
 }
 
@@ -455,18 +462,22 @@ nav a:hover{
     display: none;
 }
 
-.sign-up .meetup, .sign-up .tse{
+.sign-up .discord .step-3-small{
+    display: none;
+}
+
+.sign-up .meetup, .sign-up .tse, .sign-up .discord{
     background-color: #DBE2EF;
     color: #3F72AF;    
-    width: 60rem;
+    width: 40rem;
     height: 17rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 1rem;
+    padding: 4rem 1rem;    
 }
 
-.sign-up .meetup h2, .sign-up .tse h2{
+.sign-up .meetup h2, .sign-up .tse h2, .sign-up .discord h2{
     text-shadow: 3px 3px #F9F7F7;
 }
 
@@ -475,7 +486,12 @@ nav a:hover{
 }
 
 .sign-up .tse{
-    box-shadow: 7px 7px #969faf;
+    box-shadow: 0px 7px #969faf;
+}
+
+.sign-up .discord{    
+    box-shadow: 0px 7px #969faf;
+    border-right: 7px solid #969faf;
 }
 
 .sign-up i{
@@ -490,7 +506,7 @@ nav a:hover{
     background-color: #f64060;
     margin-top: 2.5rem;
     margin-bottom: 2rem;
-    font-size: 1rem;    
+    font-size: 1rem;      
     transition: transform 200ms, box-shadow 200ms ease;    
     box-shadow: 5px 10px 0px 0px #8a2336;
     border: 1px solid #8a2336;
@@ -509,47 +525,51 @@ nav a:hover{
     transform: translateY(10px);
 }
 
-@media only screen and (max-width: 1937px) {
+@media only screen and (max-width: 1952px) {
     .sign-up{
-        font-size: 1rem;
-        height: 35rem;
-        grid-template-columns: repeat(auto-fit, minmax(1rem, 43rem));
+        font-size: 0.9rem;        
+        grid-template-columns: repeat(auto-fit, minmax(1rem, 35rem));
     }
     
-    .sign-up .meetup, .sign-up .tse{
-        width: 45rem;
-        height: 16.5rem;        
-    }
-}
-
-@media only screen and (max-width: 1393px) {
-    .sign-up{
-        height: 45rem;
-    }
-    
-    .sign-up .meetup, .sign-up .tse{
-        width: 45rem;
+    .sign-up .meetup, .sign-up .tse, .sign-up .discord{
+        width: 35rem;               
     }
 
-    .sign-up .meetup{
-        box-shadow: 7px 7px #969faf;
-    }
-}
-
-@media only screen and (max-width: 745px) {    
-    .sign-up .meetup, .sign-up .tse{
-        width: 40rem;        
+    .sign-up a{
         font-size: 0.9rem;
     }
 }
 
-@media only screen and (max-width: 655px) {
+@media only screen and (max-width: 1735px) {
     .sign-up{
-        height: 50rem;
+        grid-template-columns: repeat(auto-fit, minmax(72rem, 72rem));
+        font-size: 1rem;
+        height: 65rem;        
     }
     
-    .sign-up .meetup, .sign-up .tse{
-        width: 22rem;
+    .sign-up .meetup, .sign-up .tse, .sign-up .discord{
+        width: 40rem; 
+        box-shadow: 7px 7px #969faf; 
+    }
+
+    .sign-up .discord{
+        border-right: none;
+        margin-bottom: 1rem;
+    }
+
+    .sign-up a{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 655px) {
+    .sign-up{
+        height: 75rem;
+    }
+    
+    .sign-up .meetup, .sign-up .tse, .sign-up .discord{
+        width: 19rem;
         height: 20rem;        
         padding: 3rem 1rem;
         text-align: center;
@@ -559,11 +579,23 @@ nav a:hover{
         display: none;
     }
 
+    .sign-up .tse .tsepage-button-large{
+        display: none;
+    }
+    
+    .sign-up .discord .discord-button-large{
+        display: none;
+    }
+    
     .sign-up .meetup .step-1-big{
         display: none;
     }
 
     .sign-up .tse .step-2-big{
+        display: none;
+    }
+
+    .sign-up .discord .step-3-big{
         display: none;
     }
 
@@ -576,7 +608,7 @@ nav a:hover{
         color: #f64060;
         text-shadow: 3px 3px #5e1724;
         font-size: 1.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 2rem;      
     }
 
     .sign-up .tse .step-2-small{
@@ -587,11 +619,31 @@ nav a:hover{
     .sign-up .tse .step-2-small i{
         color: #f64060;
         text-shadow: 3px 3px #5e1724;
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
+        font-size: 1.5rem;    
+        margin-bottom: 2rem;    
+    }
+
+    .sign-up .discord .step-3-small{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .sign-up .discord .step-3-small i{
+        color: #f64060;
+        text-shadow: 3px 3px #5e1724;
+        font-size: 1.5rem;    
+        margin-bottom: 2rem;    
     }
 
     .sign-up .meetup .meetup-button-small {
+        display: block;
+    }
+
+    .sign-up .tse .tsepage-button-small{
+        display: block;
+    }
+    
+    .sign-up .discord .discord-button-small{
         display: block;
     }
 }
